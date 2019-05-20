@@ -57,7 +57,7 @@ career-profile:
 education:
     - degree: MSc in Physics & Astronomy
       university: UNC - Chapel Hill
-      time: 2011 - 2014
+      time: 2014
       details: |
         Describe your study here lorem ipsum dolor sit amet, consectetuer
         adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
@@ -70,7 +70,7 @@ education:
 
     - degree: BSc in Physics (Astrophysics)
       university: UC Santa Cruz
-      time: 2004 - 2009
+      time: 2009
       details: |
         Describe your study here lorem ipsum dolor sit amet, consectetuer
         adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
@@ -148,9 +148,9 @@ publications:
       bibendum fringilla a eu lectus.
 
     papers:
-      - title: The Art of Computer Programming
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
+      - title: The Problem with Win Probability
+        authors: Sujoy Ganguly and *Nathan Frank*
+        conference: Sloan Sports Analytics Conference, 2017
 
       - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
         authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
@@ -164,8 +164,8 @@ skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: Python & Django
-        level: 98%
+      - name: Python
+        level: 95%
 
       - name: Javascript & jQuery
         level: 98%

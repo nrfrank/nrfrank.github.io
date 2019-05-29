@@ -2,8 +2,4 @@ _site
 .sass-cache
 .jekyll-metadata
 .idea
-.idea/misc.xml
-.idea/modules.xml
-.idea/nrfrank.github.io.iml
-.idea/vcs.xml
-.idea/workspace.xml
+.idea/*

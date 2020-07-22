@@ -4,23 +4,23 @@
 
 sidebar:
     about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: True # set to False if you want education in main section instead of in sidebar
+    education: False # set to False if you want education in main section instead of in sidebar
 
     # Profile information
     name: Nathan Frank
-    tagline: Artificial Intelligence Scientist
+    tagline: Full Stack Data Scientist
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: nathanryanfrank@gmail.com
+    email:
     phone:
     website: nrfrank.github.io #do not add http://
     linkedin: nrfrank
     github: nrfrank
     gitlab:
     bitbucket:
-    twitter: '@NathanRFrank'
-    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    twitter:
+    stack-overflow: 5258292/wormhole # Number/Username, e.g. 123456/alandoe
     codewars:
 
 #    languages:
@@ -46,141 +46,159 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-
-      Second paragraph if required.
+      Skilled data scientist with experience leading all aspects of the machine learning life cycle. Former Astrophysicist turned full stack data
+      scientist with proven history of delivering results into production while leading projects with international, cross-functional teams. Versatile
+      problem solver and intermediary between data science and engineering with an intuition for building machine learning technologies.
 
 education:
-    - degree: MSc in Physics & Astronomy
-      university: UNC - Chapel Hill
-      time: 2014
-      details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
+  - degree: PhD Candidate (ABD), Physics & Astronomy
+    university: UNC - Chapel Hill
+    time: Jun. 2014 - Jan. 2017
+    details: |
+      - Advanced to candidacy by completing all coursework as well as qualifying and preliminary exams.
+      - Project: *Structured Energy Profiles in Gamma-ray Burst Afterglows: Analytic Calculation of Images and Light Curves for Direct Modeling*
 
-          - Bullet point
-          - Bullet point 
+  - degree: MS, Physics & Astronomy
+    university: UNC - Chapel Hill
+    time: Aug. 2011 - May 2014
+    details: |
+        - Thesis: *Application of a Toy Model of Jet Structure to the Afterglow of GRB 080710*
 
-    - degree: BSc in Physics (Astrophysics)
-      university: UC Santa Cruz
-      time: 2009
-      details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-
-          - Bullet point
-          - Bullet point 
+  - degree: BS, Physics (Astrophysics)
+    university: UC Santa Cruz
+    time: Sept. 2004 - Jun. 2009
+    details: |
+        - Thesis: *Searching for Millisecond Pulsars in Gamma-ray Data Using the Fermi LAT*
 
 experiences:
-    - role: AI Scientist
-      time: 2019 - Present
-      company: STATS LLC, Chicago
-      details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-        enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-        error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-        architecto beatae vitae dicta sunt explicabo.
+  - role: AI Scientist - Tech Lead, ML Platform
+    time: Jan. 2020 - Present
+    company: Stats Perform (formerly STATS, LLC)
+    details: |
+      - Lead the development of a machine learning training framework, built on Docker, EKS and SageMaker, to dramatically speed up iteration
+        cycles and reduce time to deployment. Trained teams internationally on using this and other technologies in their workflow.
+      - Spearhead development of ML Platform roadmap to modernize company’s AI infrastructure and improve efficiency; evaluate potential
+        tools (AWS Sagemaker Studio, ML Flow and Kubeflow). Advise on team resourcing and project allocation.
+      - Train and deploy model using GNNs to predict minutes played of NBA players with RMSE (5.75) lower than human domain experts (6.15).
 
-          - Bullet point
-          - Bullet point 
+  - role: AI Scientist - Tech Lead, STATS VQ
+    time: Jan. 2019 - Jan. 2020
+    company: Stats Perform (formerly STATS, LLC)
+    details: |
+      - Lead international team of 13 data scientists and engineers in building a [predictive player props API](https://www.statsperform.com/betting-fantasy/trading-tools/player-data-models/)
+      for sports book customers, generating [$500k of new business](https://sportshandle.com/william-hill-stats-perform-prop-deal/)
+      in the first six months. Oversaw on-time completion of deadlines for the NBA & NFL 2018-19 playoffs as well as 2019-20 season,
+      requiring delivery of 11 new models into production while automating existing manual process for legacy products.
+      - Drove development of an internal TensorFlow based model development framework with packages for dataset generation, versioning
+      and metadata management, architecture definition and training, and deployment to a TensorFlow Serving RESTful API in AWS Fargate.
+      - Provide technical oversight of the VQ product: Java Spark ETL pipeline, model development, cloud infrastructure (AWS), human-in-theloop
+      interface and both internal and client-facing APIs. Guide story definition and refinement; lead weekly/quarterly planning sessions.
+      - Aide design and creation of cloud data lake (AWS S3, Glue & Athena), reducing cost and easing access to historical data archived in on
+      premise Oracle databases. Develop methods to query the data lake, process and split the result into datasets and store in S3.
 
-    - role: Data Scientist
-      time: 2017 - 2019
-      company: STATS LLC, Chicago
-      details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
+  - role: Data Scientist
+    time: Jan. 2017 - Jan. 2019
+    company: STATS LLC, Chicago
+    details: |
+      - STATS Prediction as a Service (PaaS): Co-author tools integrating ETL pipelines to deliver data to the cloud (AWS S3), generate datasets
+      from queries executed at scale (AWS Athena), train TensorFlow models in Docker and deploy to a HTTP RESTful API endpoint (TensorFlow
+      Serving with AWS SageMaker, Lambda & API Gateway). Submit to inaugural VCG AI/ML Hackathon and win most disruptive entry.
+      - [STATS Edge](https://www.statsperform.com/team-performance/football/edge-analysis/):
+      Refactor legacy data science pipeline and deploy existing scikit-learn models to Flask APIs. Contribute to Apache Spark ETL
+      pipeline in a paired programming (XP) setting. [Optimize](https://arxiv.org/pdf/1912.13107.pdf) existing models, reducing runtime by an order of magnitude.
+      - [NBA Live Win Probability](http://www.sloansportsconference.com/wp-content/uploads/2018/02/2011.pdf):
+      Achieved SOTA accuracy (88%) predicting end of game outcomes for NBA games given in-game context
+      through the use of embedding techniques. Process and release a curated dataset containing 352 features of over 8.7M NBA plays from
+      the 2002-03 through 2016-17 seasons. Present work at 2018 Sloan Sports Analytics Conference.
+      - [STATS Insights](https://www.statsperform.com/media-and-tech/viewer-engagement/):
+      Used LSI, LDA and other topic modeling techniques to classify ∼80k human generated media notes, learning templates
+      to automate nearly half (44% ). Delivered 546 automated notes using custom Jinja-based templates for Allstate’s March Mayhem campaign
+      during the 2017 NCAA Tournament. Used learned templates to generate >19k notes across 10 international soccer leagues.
 
-          - Bullet point
-          - Bullet point
-
-projects:
-    title: Projects
-    intro: >
-      You can list your side projects or open source libraries in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-
-    assignments:
-      - title: Velocity
-        link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
-
-      - title: DevStudio
-        link: "#"
-        tagline: "A responsive website template designed to help web developers/designers market their services."
-
-      - title: Tempo
-        link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+  - role: Research & Teaching Assistant
+    time: Aug. 2011 - Jan. 2017
+    company: Dept. of Physics & Astronomy, UNC - Chapel Hill
+    details: |
+      - Developed an [analytic model](https://www.danreichart.com/gwcounterparts) of afterflow emission from structured,
+      off-axis Gamma-ray Bursts (GRBs) with results comparable to 3D
+      magnetohydrodynamic simulations. Modeled spatiotemporal observational data using a genetic algorithm based optimization algorithm.
+      - Builder of [PROMPT-SSO](https://en.wikipedia.org/wiki/PROMPT_Telescopes) and contributor to the
+      [Skynet Robotic Telescope Network](https://skynet.unc.edu/): a collection of fully automated telescopes, control
+      software, image and data processing pipeline, and web interface.
+      - Head instructor for [Introductory Astronomy Lab](https://www.danreichart.com/introastro).
+      Organizer and host of [Morehead Observatory Guest Night](https://physics.unc.edu/seminars/morehead/), a weekly public astronomy
+      presentation. Instructor for [ERIRA](https://www.danreichart.com/erira), a summer astronomy research and field experience.
+#
+#projects:
+#    title: Projects
+#    intro: >
+#      You can list your side projects or open source libraries in this
+#      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+#      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+#
+#    assignments:
+#      - title: Velocity
+#        link: "#hook"
+#        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+#
+#      - title: DevStudio
+#        link: "#"
+#        tagline: "A responsive website template designed to help web developers/designers market their services."
+#
+#      - title: Tempo
+#        link: "#"
+#        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+#
+#      - title: Atom
+#        link: "#"
+#        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+#
+#      - title: Delta
+#        link: "#"
+#        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
 publications:
     title: Publications
-    intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+#    intro: |
+#      You can list your publications in this section. Lorem ipsum dolor sit
+#      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+#      bibendum fringilla a eu lectus.
 
     papers:
+      - title: Improved Structural Discovery and Representation Learning of Multi-Agent Data
+        authors: J. Hobbs, M. Holbrook, N. Frank, L. Sha, P. Lucey
+        conference: arXiv:1912.13107 (2019)
+
+      - title: Method and System for Interactive, Interpretable, and Improved Match and Player Performance Predictions in Team Sports
+        authors: H. Ruiz, S. Ganguly, N. Frank, P. Lucey
+        conference: US Patent App. 16/254,088 (January 22, 2019)
+
       - title: The Problem with Win Probability
-        authors: Sujoy Ganguly and *Nathan Frank*
-        conference: Sloan Sports Analytics Conference, 2017
+        authors: S. Ganguly, N. Frank
+        conference: Proc. of the 12th MIT Sloan Sports Analytics Conf. (2018)
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-      - title: A syntax directed compiler for Algol 60
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
-
-skills:
-    title: Skills &amp; Proficiency
-
-    toolset:
-      - name: Python
-        level: 95%
-
-      - name: Javascript & jQuery
-        level: 98%
-
-      - name: Angular
-        level: 98%
-
-      - name: HTML5 & CSS
-        level: 95%
-
-      - name: Ruby on Rails
-        level: 85%
-
-      - name: Sketch & Photoshop
-        level: 60%
+#
+#skills:
+#    title: Skills &amp; Proficiency
+#
+#    toolset:
+#      - name: Python
+#        level: 95%
+#
+#      - name: Javascript & jQuery
+#        level: 98%
+#
+#      - name: Angular
+#        level: 98%
+#
+#      - name: HTML5 & CSS
+#        level: 95%
+#
+#      - name: Ruby on Rails
+#        level: 85%
+#
+#      - name: Sketch & Photoshop
+#        level: 60%
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

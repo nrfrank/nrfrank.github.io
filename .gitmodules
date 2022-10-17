@@ -1,6 +1,0 @@
-[submodule "themes/awesome-identity"]
-	path = themes/awesome-identity
-	url = https://github.com/posquit0/hugo-awesome-identity
-[submodule "themes/almeida-cv"]
-	path = themes/almeida-cv
-	url = https://github.com/nrfrank/almeida-cv.git

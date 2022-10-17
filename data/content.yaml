@@ -1,0 +1,154 @@
+BasicInfo:
+  FirstName: Nathan
+  LastName: Frank
+  Photo: img/headshot.jpg
+  Contacts:
+#    - Icon: fas fa-phone
+#      Info: +44 123 456 789
+    - Icon: fas fa-envelope
+      Info: nathanryanfrank@gmail.com
+    - Icon: fas fa-globe
+      Info: nrfrank.github.io
+    - Icon: fas fa-map-marker-alt
+      Info: Chicago, IL, USA
+
+Profile: Skilled data scientist with experience leading all aspects of the machine learning life cycle. Former Astrophysicist turned full stack data scientist with proven history of delivering results into production while leading projects with international, cross-functional teams. Versatile problem solver and intermediary between data science and engineering with an intuition for building machine learning technologies.
+
+Experience:
+  - Employer: Stats Perform (formerly STATS, LLC)
+    Place: Chicago, IL
+    Positions:
+      - Title: Tech Lead, ML Platform
+        Date: Jan 2020 - Present
+        Details:
+          - Lead the development of a machine learning training framework, built on Docker, EKS and SageMaker, to dramatically speed up iteration cycles and reduce time to deployment. Trained teams internationally on using this and other technologies in their workflow.
+          - Spearhead development of ML Platform roadmap to modernize company's AI infrastructure and improve efficiency; evaluate potential tools (AWS Sagemaker Studio, ML Flow and Kubeflow). Advise on team resourcing and project allocation.
+          - Train and deploy model using GNNs to predict minutes played of NBA players with RMSE (5.75) lower than human domain experts (6.15).
+        Badges: ['Python', 'Kubernetes (EKS)', 'Docker', 'MLflow', 'Cortex', 'TensorFlow']
+      - Title: Tech Lead, STATS VQ
+        Date: Jan 2019 - Jan 2020
+        Details:
+          - Lead international team of 13 data scientists and engineers in building a predictive player props API for sports book customers, generating $500k of new business in the first six months. Oversaw on-time completion of deadlines for the NBA & NFL 2018-19 playoffs as well as 2019-20 season, requiring delivery of 11 new models into production while automating existing manual process for legacy products.
+          - Drove development of an internal TensorFlow based model development framework with packages for dataset generation, versioning and metadata management, architecture definition and training, and deployment to a TensorFlow Serving RESTful API in AWS Fargate.
+          - Provide technical oversight of the VQ product, including Java Spark ETL pipeline, model development, cloud infrastructure (AWS), human-in-the-loop interface and both internal and client-facing APIs. Guide story definition and refinement; lead weekly/quarterly planning sessions.
+          - Aide design and creation of \cloud data lake (AWS S3, Glue & Athena), reducing cost and easing access to historical data archived in on premise Oracle databases. Develop methods to query the data lake, process and split the result into datasets and store in S3.
+        Badges: ['Python', 'Spark', 'TensorFlow', 'AWS EMR, Farfate, & Lambda']
+      - Title: Data Scientist
+        Date: Jan 2017 - Jan 2019
+        Details:
+          - STATS Prediction as a Service (PaaS) - Co-author tools integrating ETL pipelines to deliver data to the cloud (AWS S3), generate datasets from queries executed at scale (AWS Athena), train TensorFlow models in Docker and deploy to a HTTP RESTful API endpoint (TensorFlow Serving with AWS SageMaker, Lambda & API Gateway). Submit to inaugural VCG AI/ML Hackathon and win most disruptive entry.
+          - STATS Edge - Refactor legacy data science pipeline and deploy existing scikit-learn models to Flask APIs. Contribute to Apache Spark ETL pipeline in a paired programming (XP) setting. Optimize existing models, reducing runtime by an order of magnitude.
+          - NBA Live Win Probability - Achieved SOTA accuracy (88%) predicting end of game outcomes for NBA games given in-game context through the use of embedding techniques. Process and release a curated dataset containing 352 features of over 8.7M NBA plays from the 2002-03 through 2016-17 seasons. Present work at 2018 Sloan Sports Analytics Conference.
+          - STATS Insights - Used LSI, LDA and other topic modeling techniques to classify ~$80k human generated media notes, learning templates to automate nearly half (44%). Delivered 546 automated notes using custom Jinja-based templates for Allstate’s March Mayhem campaign during the 2017 NCAA Tournament. Used learned templates to generate >19k notes across 10 international soccer leagues.
+  - Employer: UNC Kenan-Flagler Business School, UNC - Chapel Hill
+    Place: Chapel Hill, NC
+    Positions:
+      - Title: Teaching Assistant
+        Date: Jan 2016 - Jan 2017
+        Details:
+          - Co-instructor for UNC Kenan-Flagler Business School "Sport Analytics" course. Authored R programming and sports analytics tutorial.
+        Badges: ['R', 'Python', 'Sports Analytics']
+  - Employer: Dept. of Physics & Astronomy, UNC - Chapel Hill
+    Place: Chapel Hill, NC
+    Positions:
+      - Title: Research & Teaching Assistant
+        Date: Aug 2011 - Jan 2017
+        Details:
+          - Developed an analytic model of afterflow emission from structured, off-axis Gamma-ray Bursts (GRBs) with results comparable to 3D magnetohydrodynamic simulations. Modeled spatiotemporal observational data using a genetic algorithm based optimization algorithm.
+          - Builder of PROMPT-SSO and contributor to the Skynet Robotic Telescope Network, a collection of fully automated telescopes, control software, image and data processing pipeline, and web interface.
+          - Head instructor for Introductory Astronomy Lab. Organizer and host of Morehead Observatory Guest Night, a weekly public astronomy presentation. Instructor for ERIRA, a summer astronomy research and field experience.
+        Badges: ['Python']
+
+Education:
+  - Course: MS, Physics & Astronomy
+    Place: University of North Carolina at Chapel Hill
+    Date: Aug 2011 - May 2014
+    Details: Thesis - Application of a Toy Model of Jet Structure to the Afterglow of GRB 080710
+
+  - Course: BS, Physics (Astrophysics), Honors
+    Place: University of California, Santa Cruz
+    Date: Sep 2004 - Jun 2009
+    Details: Thesis - Searching for Millisecond Pulsars in Gamma-ray Data Using the Fermi LAT
+
+#References:
+#  - Name: Person One
+#    Relation: Co-worker at Super Cool Company
+#    Contacts:
+#    - Icon: fas fa-phone
+#      Info: +44 123 456 790
+#    - Icon: fas fa-envelope
+#      Info: contact@person-one.com
+#    - Icon: fas fa-map-marker-alt
+#      Info: Melbourne, Australia
+#  - Name: Person Two
+#    Relation: Boss at Super Cool Company
+#    Contacts:
+#    - Icon: fas fa-phone
+#      Info: +44 123 456 791
+#    - Icon: fas fa-envelope
+#      Info: contact@person-two.com
+#    - Icon: fas fa-map-marker-alt
+#      Info: Sydney, Australia
+
+
+Skills:
+  - Family: Programming
+    Items:
+      - Python
+      - SQL
+      - Java
+      - C++
+      - Bash
+      - R
+      - Javascript
+      - HTML
+  - Family: Frameworks
+    Items:
+      - AWS Sagemaker
+      - TensorFlow Extended
+      - Docker
+      - Presto
+      - Apache Spark
+      - Horovod
+      - Kubeflow
+      - MLflow
+      - CircleCI
+  - Family: Python Packages
+    Items:
+      - TensorFlow
+      - Pandas
+      - NumPy
+      - scikit-learn
+      - matplotlib
+      - seaborn
+      - Jupyter
+      - Adanet
+      - XGBoost
+      - spaCy
+      - BeautifulSoup
+#  - Family: Misc
+#    Items:
+#      - LaTeX
+
+#Languages:
+#  - Name: Portuguese
+#    Level: Native
+#  - Name: English
+#    Level: C2
+#  - Name: Spanish
+#    Level: B1
+#  - Name: German
+#    Level: B1
+
+Diplomas:
+  - Vista Consulting Group AI/ML Hackathon Most Disruptive Entry (2018)
+  - Automated Insights/Amazon Alexa Hackathon Most Creative Entry (2017)
+  - NASA NC Space Grant Graduate Research Fellowship (2014, 2015)
+
+#Interests:
+#  - Bouldering
+#  - Cooking
+#  - Windsurfing
+#  - Bossa Nova
+#  - Design
+#  - Languages

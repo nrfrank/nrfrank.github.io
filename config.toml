@@ -1,27 +1,43 @@
-languageCode = "en-us"
-defaultContentLanguage = "en"
-enableRobotsTXT = true
-enableEmoji = true
-
-theme = "almeida-cv"
-disableKinds = ["page", "section", "taxonomy", "term", "RSS", "sitemap"]
-
+theme = "awesome-identity"
 baseURL = "https://nrfrank.github.io/"
+languageCode = 'en-us'
 title = "Nathan Frank's CV"
-#googleAnalytics = ""
 
-[params]
-enableMetaTags = true
-colorLight = "#fff"
-colorDark = "#666"
-colorPageBackground = "#ddd"
-colorPrimary = "#1e477b"
-colorSecondary = "#aaa"
-colorIconPrimary = "#fff"
-colorIconBackground = "#1F57A2"
-colorRightColumnBackground = "#f5f5f5"
-colorRightColumnHeadingText = "#666"
-colorRightColumnBodyText = "#666"
-colorRightColumnIconPrimary = "#fff"
-colorRightColumnIconBackground = "#1F57A2"
-pages = 1
+
+## Profile Configurations
+[params.profile]
+#  portrait = "images/profile.png"
+  portrait = "images/headshot.jpg"
+  firstname = "Nathan"
+  lastname = "Frank"
+  title = "Director of Machine Learning Engineering @ strong.io"
+  bio = """Skilled machine learning leader with experience in all aspects of the machine learning and software development life cycle.
+Former Astrophysicist turned data scientist and machine learning engineer with proven history of delivering results into production
+across a wide variety of domains while leading projects with international, cross-functional teams and interfacing directly with clients and stakeholders.
+Versatile problem solver and intermediary between data science and engineering with an intuition for building machine learning applications.
+  """
+
+## Contacts Configurations
+[params.contacts]
+  email = "nathanryanfrank@gmail.com"
+  github = "nrfrank"
+#  gitlab = "john.smith"
+#  twitter = "john.smith"
+#  facebook = "john.smith"
+  linkedin = "nrfrank"
+#  instagram = "john.smith"
+#  stackoverflow = "7919458"
+#  keybase = "john.smith"
+#  medium = "john.smith"
+#  xing = "john.smith"
+
+## Actions (links) configuration
+[params.actions.cv]
+  name = 'Download My CV'
+  url = "https://github.com/nrfrank/cv/raw/main/out/cv.pdf"
+
+
+## Footer Configurations
+[params.footer]
+  copyright = "© 2019-2020 Byungjin Park. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
+  poweredBy = true

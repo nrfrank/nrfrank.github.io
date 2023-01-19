@@ -42,5 +42,5 @@ Versatile problem solver and intermediary between data science and engineering w
 
 ## Footer Configurations
 [params.footer]
-  copyright = "© 20023 Nathan Frank. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
+  copyright = "© 2023 Nathan Frank. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
   poweredBy = true

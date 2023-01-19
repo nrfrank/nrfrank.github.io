@@ -5,6 +5,9 @@ title = "Nathan Frank's CV"
 
 
 ## Profile Configurations
+[params]
+  colorAwesome = "rgb(37, 87, 162)"
+
 [params.profile]
 #  portrait = "images/profile.png"
   portrait = "images/headshot.jpg"
@@ -39,5 +42,5 @@ Versatile problem solver and intermediary between data science and engineering w
 
 ## Footer Configurations
 [params.footer]
-  copyright = "© 2019-2020 Byungjin Park. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
+  copyright = "© 20023 Nathan Frank. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
   poweredBy = true

@@ -1,7 +1,7 @@
 theme = "awesome-identity"
 baseURL = "https://nrfrank.github.io/"
 languageCode = 'en-us'
-title = "Nathan Frank's CV"
+title = "Nathan Frank"
 
 
 ## Profile Configurations
@@ -13,11 +13,10 @@ title = "Nathan Frank's CV"
   portrait = "images/headshot.jpg"
   firstname = "Nathan"
   lastname = "Frank"
-  title = "Director of Machine Learning Engineering @ strong.io"
+  title = "Machine Learning Engineering Leader"
   bio = """Skilled machine learning leader with experience in all aspects of the machine learning and software development life cycle.
-Former Astrophysicist turned data scientist and machine learning engineer with proven history of delivering results into production
-across a wide variety of domains while leading projects with international, cross-functional teams and interfacing directly with clients and stakeholders.
-Versatile problem solver and intermediary between data science and engineering with an intuition for building machine learning applications.
+Former Astrophysicist turned data scientist and machine learning engineer with a proven history of delivering results into production
+across a wide variety of domains while leading projects with international, cross-functional teams.
   """
 
 ## Contacts Configurations
@@ -37,7 +36,11 @@ Versatile problem solver and intermediary between data science and engineering w
 ## Actions (links) configuration
 [params.actions.cv]
   name = 'Download My CV'
-  url = "https://github.com/nrfrank/cv/raw/main/out/cv.pdf"
+  url  = 'https://github.com/nrfrank/cv/raw/main/out/cv.pdf'
+
+[params.actions.bisi]
+  name = 'BISI (Build It Ship It)'
+  url  = 'https://bisi.gitbook.io/bisi/'
 
 
 ## Footer Configurations

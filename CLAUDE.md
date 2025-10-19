@@ -16,6 +16,7 @@ This is Nathan Frank's personal website built with the Dante Astro theme. It's d
 ## Architecture
 
 ### Tech Stack
+
 - **[Dante Astro Theme](https://github.com/JustGoodUI/dante-astro-theme)** - Minimal portfolio/blog theme
 - **Astro 5.5+** - Static site generator with islands architecture
 - **Tailwind CSS 4.0+** - Utility-first CSS with new CSS-first architecture
@@ -23,6 +24,7 @@ This is Nathan Frank's personal website built with the Dante Astro theme. It's d
 - **GitHub Pages** - Static hosting with automated deployment
 
 ### Brand Identity
+
 - **Accent Color**: #1E477B (defined as CSS custom properties)
 - **Typography**: Inter Variable (sans-serif) + Newsreader Variable (serif)
 - **Design**: Minimal, content-focused aesthetic with dark mode support
@@ -56,42 +58,45 @@ This is Nathan Frank's personal website built with the Dante Astro theme. It's d
 Content is managed through Astro's Content Collections system:
 
 **Projects** (`/src/content/projects/*.md`):
+
 ```yaml
 ---
-title: "Project Title"
-description: "Brief description"
-publishDate: "2024-01-01"
+title: 'Project Title'
+description: 'Brief description'
+publishDate: '2024-01-01'
 isFeatured: true
 seo:
   image:
-    src: "/project-image.jpg"
-    alt: "Project description"
+    src: '/project-image.jpg'
+    alt: 'Project description'
 ---
 ```
 
 **Blog Posts** (`/src/content/blog/*.md`):
+
 ```yaml
 ---
-title: "Blog Post Title"
-description: "Brief description"
-publishDate: "2024-01-01"
+title: 'Blog Post Title'
+description: 'Brief description'
+publishDate: '2024-01-01'
 isFeatured: false
-tags: ["tag1", "tag2"]
+tags: ['tag1', 'tag2']
 seo:
   image:
-    src: "/post-image.jpg"
-    alt: "Post description"
+    src: '/post-image.jpg'
+    alt: 'Post description'
 ---
 ```
 
 **Static Pages** (`/src/content/pages/*.md`):
+
 ```yaml
 ---
-title: "Page Title"
-description: "Page description"
+title: 'Page Title'
+description: 'Page description'
 seo:
-  title: "SEO Title"
-  description: "SEO description"
+  title: 'SEO Title'
+  description: 'SEO description'
 ---
 ```
 
@@ -106,6 +111,7 @@ seo:
 ### Site Configuration
 
 All site settings are centralized in `/src/data/site-config.ts`:
+
 - Site metadata (title, description, URL)
 - Navigation structure (header and footer links)
 - Social media links
@@ -115,6 +121,7 @@ All site settings are centralized in `/src/data/site-config.ts`:
 ### Deployment
 
 Automated deployment via GitHub Actions to GitHub Pages:
+
 - Triggers on pushes to `main` branch
 - Builds with Node.js 20 and deploys to `dist/`
 - Uses Astro's static file generation (`build: { format: 'file' }`)
@@ -133,6 +140,7 @@ Automated deployment via GitHub Actions to GitHub Pages:
 ### Content Strategy
 
 The site structure supports Nathan's professional brand:
+
 - **Homepage**: Bio-focused with professional introduction
 - **Projects**: Showcase of speaking engagements, case studies, technical work
 - **Blog**: Platform for technical writing and thought leadership

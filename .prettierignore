@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.astro/
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment variables and configs
+.env*
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Assets that shouldn't be formatted
+public/
+*.svg
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Legacy files and configs from previous theme
+archetypes/
+data/
+config.toml
+.github/workflows/gh-pages.yml

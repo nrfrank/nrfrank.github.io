@@ -32,8 +32,5 @@ public/
 *.jpeg
 *.gif
 
-# Legacy files and configs from previous theme
-archetypes/
-data/
-config.toml
-.github/workflows/gh-pages.yml
+# Legacy files (if any remain)
+.gitmodules

@@ -6,10 +6,10 @@ import siteConfig from './src/data/site-config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: siteConfig.website,
-    build: { format: 'file' },
-    vite: {
-        plugins: [tailwindcss()]
-    },
-    integrations: [mdx(), sitemap()]
+  site: siteConfig.website,
+  build: { format: 'file' },
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  integrations: [mdx(), sitemap()],
 });

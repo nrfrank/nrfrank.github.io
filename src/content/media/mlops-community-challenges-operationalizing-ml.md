@@ -1,29 +1,29 @@
 ---
 title: 'Challenges Operationalizing ML (And Some Solutions)'
-description: 'This talk details some common challenges and pitfalls when attempting to operationalize machine learning systems and discusses some simple solutions.'
+description: 'A concise guide to taking ML from experiment to production with an SRE/DevOps mindset. It clarifies what is unique to MLOps and how to start with paved road patterns that scale.'
 date: 2023-12-29
 venue: 'MLOps Community'
 type: 'podcast'
 url: 'https://home.mlops.community/public/videos/challenges-operationalizing-ml-and-some-solutions'
-topics: ['MLOps', 'DevOps', 'Production ML', 'Team Dynamics']
-audience: 'Those new to MLOps and machine learning operationalization'
+topics: ['MLOps', 'SRE/DevOps', 'Production ML', 'ML Engineering', 'Team Dynamics', 'DevX']
+audience: 'Engineering leaders, ML platform teams, and DS/MLEs shipping models at scale.'
 isFeatured: true
 seo:
   title: 'Nathan Frank - Challenges Operationalizing ML Talk'
-  description: "Watch Nathan Frank's talk on common MLOps challenges and practical solutions for operationalizing machine learning systems."
+  description: 'Take ML to production with an SRE/DevOps mindset. Learn what is unique to MLOps and the paved road patterns for CI/CD, observability, and governance.'
   image:
     src: '/nathan-preview.jpg'
     alt: 'Nathan Frank speaking about MLOps challenges'
 ---
 
-A practical talk focused on the real-world challenges teams face when moving machine learning models from development to production.
-Drawing from experience at WW Grainger, this presentation covers common pitfalls in ML operationalization and provides actionable solutions for building robust MLOps practices.
+### Summary
 
-## Key Topics Covered
+A practical, no-fluff walkthrough of how to take ML from experiments to reliable production systems. It reframes MLOps through an SRE/DevOps lens—standardized environments, CI/CD, observability, data/model versioning, evaluation, and governance—while calling out people/process pitfalls and offering paved-road starting points to help teams ship faster with guardrails.
 
-- **ML Development Workflow**: Understanding the unique challenges of machine learning development versus traditional software development
-- **Team Dynamics**: Communication patterns between data scientists, ML engineers, and platform teams
-- **Operational Perspective**: Applying SRE and DevOps principles to machine learning systems
-- **Practical Solutions**: Simple, implementable approaches to common MLOps problems
+**_Key topics & takeaways_**
 
-This talk is particularly valuable for teams beginning their MLOps journey and looking for practical guidance rather than theoretical frameworks.
+- Treat ML as software engineering with data/models: standardize environments and enforce CI/CD.
+- Build observability beyond infra: monitor data quality, drift, model performance, and user impact.
+- Use “paved roads” (starter repos, templates, golden paths) to move from bespoke to repeatable.
+- Clarify ownership and handoffs across DS/MLE/Platform/SRE; translate across role language gaps.
+- Make governance practical: align with security/architecture so the “right way” is the easy way.

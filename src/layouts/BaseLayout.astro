@@ -19,6 +19,23 @@ const { showHeader = true, ...head } = Astro.props;
         document.documentElement.classList.add('dark');
       }
     </script>
+    <script>
+      // Configure external links to open in new tab
+      document.addEventListener('DOMContentLoaded', function () {
+        const links = document.querySelectorAll('a[href]');
+        links.forEach(function (link) {
+          const href = link.getAttribute('href');
+          // Open external links (http/https) and mailto links in new tab
+          if (href && (href.startsWith('http') || href.startsWith('mailto:'))) {
+            // Skip internal links to your own domain
+            if (!href.includes('nrfrank.github.io')) {
+              link.setAttribute('target', '_blank');
+              link.setAttribute('rel', 'noopener noreferrer');
+            }
+          }
+        });
+      });
+    </script>
     <ClientRouter />
   </head>
   <body class="bg-main text-main">

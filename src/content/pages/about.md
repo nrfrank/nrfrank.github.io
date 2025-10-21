@@ -1,43 +1,43 @@
 ---
 title: About
 seo:
-  title: About Me
-  description: Learn more about the person behind the website and embark on a journey of inspiration and shared experiences.
+  title: About Nathan Frank
+  description: Engineering & AI/ML leader turning complex platforms into well-governed, widely adopted products.
   image:
-    src: '/about.jpeg'
-    alt: A person sitting at a desk in front of a computer
+    src: '/nathan-preview.jpg'
+    alt: Nathan Frank - ML Platform & Operations Leader
 ---
 
-![Alt text for image](/about.jpeg)
+![Nathan Frank](/nathan-preview.jpg)
 
-**Note!:** This about page is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+## Nathan Frank - ML Platform & Operations Leader
 
-## Ethan Donovan - Web Developer based in Estonia
+I’m an engineering and AI/ML leader who builds platforms that teams actually use. My work sits at the intersection of **_ML engineering, platform productization, and people-first leadership_**, translating between data science, engineering, security, and business stakeholders so teams can ship faster **with guardrails**.
 
-**Greetings!** I'm Ethan Donovan, a passionate web developer residing in the picturesque landscapes of [Estonia](https://en.wikipedia.org/wiki/Estonia). With a keen eye for design and a love for crafting seamless digital experiences, I bring a unique blend of creativity and technical expertise to the world of web development.
+### How I got here
 
-## Skills and Expertise
+I began in **_astrophysics_**, completing an **_M.S. in Physics & Astronomy at UNC–Chapel Hill_** after an honors **_B.S. in Physics (Astrophysics) at UC Santa Cruz_**.
+Research taught me to reason from noisy data, model complex systems, and communicate clearly.
+From there I moved into **_data science and applied ML_**, then into **_sports technology_**, where I helped build predictive products and the ML platform foundations that supported them.
 
-I specialize in front-end and back-end development, utilizing the latest technologies to build responsive and user-friendly websites. My proficiency includes **HTML**, **CSS**, **JavaScript**, and frameworks such as **Astro.js** for dynamic and interactive user interfaces. On the server side, I'm well-versed in Node.js and have experience with database management systems like MongoDB.
+That experience led me deeper into **_ML platforms_** (training, serving, observability, governance) and **_consulting_** with a focus on **_ML engineering and productization_** across a variety of clients and use cases.
+Today, at **_Grainger_**, I lead **_Machine Learning Platform & Operations_**, guiding a manager-of-managers organization to scale responsible AI adoption across many teams.
 
-## Innovation and Problem-Solving
+### What I focus on
 
-I thrive on solving complex problems and transforming ideas into functional, elegant websites. Whether it's optimizing performance, implementing new features, or troubleshooting issues, I approach each challenge with enthusiasm and a commitment to delivering high-quality solutions.
+- **_Platform productization:_** Databricks + Kubernetes; production-grade model serving; retrieval & search; multi-provider LLM access; data/feature governance.
+- **_Enablement & adoption:_** self-service onboarding, paved-road patterns, internal consulting, training, and best-practice playbooks.
+- **_Responsible AI:_** practical governance and risk controls with security/architecture so the “right way” is the easy way.
+- **_Org leadership:_** hiring and mentoring; developing new managers; building high-retention, diverse teams with clear ownership and healthy feedback loops.
 
-## Global Perspective, Local Impact
+[//]: # '### Selected highlights'
+[//]: # '- Compressed complex **migrations** and modernization timelines while maintaining service reliability.'
+[//]: # '- Turned platform onboarding from **weeks to days** via automation and cross-functional process design.'
+[//]: # '- Introduced an internal AI assistant that resolved a significant share of support questions end-to-end, freeing people for higher-value work.'
+[//]: # '- Grew platform adoption across many teams by balancing performance, cost, and governance—**platforms as products**, not just infrastructure.'
 
-Living in Estonia has not only influenced my appreciation for nature and culture but has also shaped my approach to web development. I understand the importance of creating digital solutions that resonate with local audiences while maintaining a global perspective.
+### Speaking & media
 
-## Continuous Learning
+I speak about **_enterprise MLOps_**, **_AI enablement_**, and the human side of shipping ML on podcasts, at internal/external events, and with local communities.
 
-The dynamic nature of the tech industry inspires me to stay up-to-date with the latest trends and advancements. I'm always eager to expand my skill set and embrace emerging technologies that enhance the functionality and aesthetics of the websites I create.
-
-## Collaboration and Communication
-
-I believe in the power of collaboration and effective communication. Whether working with clients, designers, or fellow developers, I value clear communication to ensure the success of every project.
-
-## Get in Touch
-
-Are you looking to elevate your online presence or bring your digital ideas to life? I'd love to hear from you! Feel free to reach out for collaboration, consultation, or just a friendly chat about all things web development.
-
-_Let's build something amazing together!_
+See also: **[Media](/media)** · [Résumé](/resume.pdf) · [LinkedIn](https://www.linkedin.com/in/nrfrank)

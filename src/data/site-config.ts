@@ -54,16 +54,16 @@ const siteConfig: SiteConfig = {
       href: '/',
     },
     {
+      text: 'About',
+      href: '/about',
+    },
+    {
       text: 'Projects',
       href: '/projects',
     },
     {
-      text: 'Blog',
-      href: '/blog',
-    },
-    {
-      text: 'About',
-      href: '/about',
+      text: 'Media',
+      href: '/media',
     },
   ],
   footerNavLinks: [
@@ -87,12 +87,16 @@ const siteConfig: SiteConfig = {
     },
     {
       text: 'Email',
-      href: 'mailto:nathan.frank@grainger.com',
+      href: 'mailto:nathanryanfrank@gmail.com',
     },
   ],
   hero: {
     title: 'Scaling responsible AI adoption at enterprise scale',
-    text: "I'm **Nathan Frank**, an engineering and AI/ML leader who builds platforms that teams actually use. At Grainger (Fortune-500; ~25k employees), I lead Machine Learning Platform & Operations, bringing Databricks, Kubernetes, production-grade model serving, vector search, and multi-provider LLM access together so product, machine learning, data science, and analytics teams can ship faster.\n\nMy approach is pragmatic and people-first: translate between data scientists, engineers, security, and business stakeholders; break down complex topics; and coach teams toward best practices.",
+    text: "I'm ***Nathan Frank***, an engineering and AI/ML leader who builds platforms that teams actually use. At Grainger, I lead Machine Learning Platform & Operations, bringing Databricks, Kubernetes, production-grade model serving, vector search, and multi-provider LLM access together so product, machine learning, data science, and analytics teams can ship faster.\n\nMy approach is pragmatic and people-first: translate between data scientists, engineers, security, and business stakeholders; break down complex topics; and coach teams toward best practices.",
+    image: {
+      src: '/nathan-preview.jpg',
+      alt: 'Nathan Frank - ML Platform & Operations Leader',
+    },
     actions: [
       {
         text: 'View Resume',

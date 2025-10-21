@@ -45,4 +45,20 @@ const projects = defineCollection({
   }),
 });
 
-export const collections = { blog, pages, projects };
+const media = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/media' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    date: z.coerce.date(),
+    venue: z.string(), // Conference, podcast, etc.
+    type: z.enum(['talk', 'podcast', 'interview', 'workshop', 'panel']),
+    url: z.string().url(),
+    topics: z.array(z.string()).default([]),
+    audience: z.string().optional(),
+    isFeatured: z.boolean().default(false),
+    seo: seoSchema.optional(),
+  }),
+});
+
+export const collections = { blog, pages, projects, media };

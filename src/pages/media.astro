@@ -1,0 +1,117 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MediaCard from '../components/MediaCard.astro';
+import { sortItemsByDateDesc } from '../utils/data-utils';
+
+const media = (await getCollection('media')).sort(sortItemsByDateDesc);
+const featuredMedia = media.filter((item) => item.data.isFeatured);
+const otherMedia = media.filter((item) => !item.data.isFeatured);
+---
+
+<BaseLayout
+  title="Media & Speaking"
+  description="Speaking engagements, interviews, and media appearances by Nathan Frank on ML platforms, AI adoption, and enterprise technology leadership."
+  image={{ src: '/nathan-preview.jpg', alt: 'Nathan Frank - ML Platform & Operations Leader' }}
+  showHeader={false}
+>
+  <article class="mb-16 sm:mb-24">
+    <div class="prose sm:prose-lg max-w-none">
+      <img src="/nathan-preview.jpg" alt="Nathan Frank" />
+
+      <h2>Speaking & Media</h2>
+
+      <p>
+        I regularly speak about <em><strong>ML platform engineering</strong></em>, <em
+          ><strong>enterprise AI adoption</strong></em
+        >, and <em><strong>technology leadership</strong></em> at conferences, podcasts, and industry
+        events.
+      </p>
+
+      <h3>Topics I Cover</h3>
+
+      <ul>
+        <li>
+          <em><strong>ML Platform Strategy</strong></em>: Building platforms that data science and
+          engineering teams actually want to use
+        </li>
+        <li>
+          <em><strong>Enterprise AI Adoption</strong></em>: Practical approaches to scaling AI
+          initiatives across large organizations
+        </li>
+        <li>
+          <em><strong>Technology Leadership</strong></em>: Leading technical teams through complex
+          platform transformations
+        </li>
+        <li>
+          <em><strong>MLOps & Platform Engineering</strong></em>: Production-grade ML infrastructure
+          and operations
+        </li>
+      </ul>
+
+      {/* Featured Media */}
+      {
+        featuredMedia.length > 0 && (
+          <>
+            <h3>Featured Appearances</h3>
+            <div class="not-prose grid gap-6 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+              {featuredMedia.map((item) => (
+                <MediaCard media={item} />
+              ))}
+            </div>
+          </>
+        )
+      }
+
+      {/* All Media */}
+      {
+        otherMedia.length > 0 && (
+          <>
+            <h3>All Media</h3>
+            <div class="not-prose grid gap-6 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+              {otherMedia.map((item) => (
+                <MediaCard media={item} />
+              ))}
+            </div>
+          </>
+        )
+      }
+
+      {/* If no media content exists yet */}
+      {
+        media.length === 0 && (
+          <>
+            <h3>Past Engagements</h3>
+            <p>
+              <em>Media appearances and speaking engagements will be listed here.</em>
+            </p>
+          </>
+        )
+      }
+
+      <h3>Speaking Availability</h3>
+
+      <p>I'm available for:</p>
+      <ul>
+        <li>Conference presentations and keynotes</li>
+        <li>Panel discussions and fireside chats</li>
+        <li>Podcast interviews</li>
+        <li>Workshop facilitation</li>
+        <li>Corporate speaking engagements</li>
+      </ul>
+
+      <h3>Get in Touch</h3>
+
+      <p>
+        Interested in having me speak at your event or on your podcast? I'd love to hear from you!
+        Reach out through <a
+          href="https://www.linkedin.com/in/nrfrank"
+          target="_blank"
+          rel="noopener noreferrer">LinkedIn</a
+        > or
+        <a href="mailto:nathanryanfrank@gmail.com">email</a> with details about your event, audience,
+        and preferred topics.
+      </p>
+    </div>
+  </article>
+</BaseLayout>

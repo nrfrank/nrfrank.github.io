@@ -1,0 +1,68 @@
+---
+import { type CollectionEntry } from 'astro:content';
+import ArrowRight from '../icons/ArrowRight.astro';
+import FormattedDate from './FormattedDate.astro';
+
+type Props = { media: CollectionEntry<'media'>; class?: string; headingLevel?: 'h2' | 'h3' };
+
+const { media, class: className, headingLevel = 'h2' } = Astro.props;
+const { title, description, date, venue, type, url, topics, audience } = media.data;
+const TitleTag = headingLevel;
+
+// Format the media type for display
+const typeLabels = {
+  talk: 'Talk',
+  podcast: 'Podcast',
+  interview: 'Interview',
+  workshop: 'Workshop',
+  panel: 'Panel',
+};
+---
+
+<a
+  class:list={[
+    'group border-main block rounded-lg border p-6 transition-all duration-200',
+    'border-l-accent-main border-l-4',
+    'hover:bg-muted hover:border-l-accent-hover',
+    '!no-underline hover:!no-underline',
+    className,
+  ]}
+  href={url}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <div class="w-full">
+    <TitleTag
+      class="font-serif text-xl leading-tight font-medium group-hover:underline group-hover:decoration-dashed group-hover:decoration-1 group-hover:underline-offset-4 sm:text-2xl"
+    >
+      {title}
+    </TitleTag>
+    <div class="mt-1 text-sm leading-normal text-neutral-600 dark:text-neutral-400">
+      <span class="font-medium">{typeLabels[type]}</span> at <span class="font-medium">{venue}</span
+      > • <FormattedDate date={date} />
+    </div>
+    {description && <div class="mt-3 text-sm leading-normal">{description}</div>}
+    {
+      topics.length > 0 && (
+        <div class="mt-2 flex flex-wrap gap-1">
+          {topics.map((topic) => (
+            <span class="inline-block rounded-full bg-neutral-100 px-2 py-1 text-xs text-neutral-700 dark:bg-neutral-800 dark:text-neutral-300">
+              {topic}
+            </span>
+          ))}
+        </div>
+      )
+    }
+    {
+      audience && (
+        <div class="mt-2 text-xs text-neutral-500 dark:text-neutral-500">Audience: {audience}</div>
+      )
+    }
+    <div
+      class="text-accent-main group-hover:text-accent-hover mt-3 flex items-center gap-1 font-serif text-sm italic"
+    >
+      View {typeLabels[type]}
+      <ArrowRight class="h-4 w-4 fill-current" />
+    </div>
+  </div>
+</a>

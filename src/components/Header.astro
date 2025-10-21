@@ -10,12 +10,16 @@ import siteConfig from '../data/site-config';
       </a>
     ) : (
       <a
-        class="text-theme-foreground font-serif text-2xl leading-tight font-medium sm:text-4xl"
+        class="hover:text-accent-hover font-serif text-2xl leading-tight font-medium sm:text-4xl"
         href="/"
       >
         {siteConfig.title}
       </a>
     )
   }
-  {siteConfig.subtitle && <p class="mt-1 text-sm leading-tight">{siteConfig.subtitle}</p>}
+  {
+    siteConfig.subtitle && (
+      <p class="mt-1 text-base leading-tight font-medium">{siteConfig.subtitle}</p>
+    )
+  }
 </header>

@@ -8,34 +8,52 @@ const hero = siteConfig.hero;
 
 {
   (hero?.title || hero?.image?.src || hero?.text || (hero?.actions && hero.actions.length > 0)) && (
-    <section class="mb-16 flex w-full flex-col gap-8 sm:mb-24">
-      {hero.title && (
-        <h1 class="font-serif text-3xl leading-tight font-medium sm:text-5xl sm:leading-tight">
-          {hero.title}
-        </h1>
-      )}
-      {hero.image?.src && (
-        <figure>
-          <img
-            class="w-full"
-            src={hero.image.src}
-            loading="lazy"
-            decoding="async"
-            alt={hero.image.alt || ''}
-          />
-          {hero.image.caption && (
-            <figcaption class="mt-1.5 text-xs sm:text-sm">{hero.image.caption}</figcaption>
+    <section class="mb-16 sm:mb-24">
+      <div class="flex flex-col gap-8 sm:flex-row sm:items-start sm:gap-12">
+        <div class="flex flex-col gap-8 sm:flex-1">
+          {/* Headshot appears here on mobile/narrow screens - ABOVE title */}
+          {hero.image?.src && (
+            <div class="sm:hidden">
+              <img
+                class="border-accent-main mx-auto h-48 w-48 rounded-full border-4 object-cover"
+                src={hero.image.src}
+                loading="lazy"
+                decoding="async"
+                alt={hero.image.alt || ''}
+              />
+              {hero.image.caption && <p class="mt-3 text-center text-xs">{hero.image.caption}</p>}
+            </div>
           )}
-        </figure>
-      )}
-      {hero.text && <div class="prose sm:prose-lg max-w-none" set:html={marked.parse(hero.text)} />}
-      {hero.actions && hero.actions.length > 0 && (
-        <div class="flex flex-wrap gap-4">
-          {hero.actions.map((action) => (
-            <Button href={action.href}>{action.text}</Button>
-          ))}
+          {hero.title && (
+            <h1 class="text-accent-main font-serif text-xl leading-tight font-medium sm:text-2xl sm:leading-tight">
+              {hero.title}
+            </h1>
+          )}
+          {hero.text && (
+            <div class="prose sm:prose-lg max-w-none" set:html={marked.parse(hero.text)} />
+          )}
+          {hero.actions && hero.actions.length > 0 && (
+            <div class="flex flex-wrap gap-4">
+              {hero.actions.map((action) => (
+                <Button href={action.href}>{action.text}</Button>
+              ))}
+            </div>
+          )}
         </div>
-      )}
+        {/* Headshot appears here on desktop/wide screens */}
+        {hero.image?.src && (
+          <div class="hidden sm:block sm:w-64 sm:flex-shrink-0">
+            <img
+              class="border-accent-main mx-auto h-64 w-64 rounded-full border-4 object-cover"
+              src={hero.image.src}
+              loading="lazy"
+              decoding="async"
+              alt={hero.image.alt || ''}
+            />
+            {hero.image.caption && <p class="mt-3 text-center text-sm">{hero.image.caption}</p>}
+          </div>
+        )}
+      </div>
     </section>
   )
 }

@@ -65,6 +65,12 @@ html.dark {
   --border-color-main: var(--border-main);
   --accent-color-main: var(--accent-main);
   --accent-color-hover: var(--accent-hover);
+  --color-accent-main: var(--accent-main);
+  --color-accent-hover: var(--accent-hover);
+  --text-color-accent-main: var(--accent-main);
+  --text-color-accent-hover: var(--accent-hover);
+  --text-decoration-color-accent-main: var(--accent-main);
+  --text-decoration-color-accent-hover: var(--accent-hover);
 }
 
 @layer utilities {
@@ -87,7 +93,7 @@ html.dark {
   }
 
   .prose a {
-    @apply font-normal underline decoration-dashed decoration-1 underline-offset-2 hover:decoration-solid;
+    @apply hover:text-accent-main font-normal underline decoration-dashed decoration-1 underline-offset-2 hover:decoration-solid;
   }
 
   .prose :where(h1, h2, h3, h4, h5, h6) {
@@ -100,5 +106,17 @@ html.dark {
 
   .prose blockquote {
     @apply border-none pl-0 font-serif text-[1.375em] leading-snug font-normal italic sm:text-[1.66667em];
+  }
+
+  /* Triple emphasis (***text***) in accent color and bold */
+  .prose :where(strong em, em strong) {
+    @apply text-accent-main font-bold;
+    font-style: normal; /* Remove italic styling */
+  }
+
+  /* Headshot styling - Custom: Hero styling floating right */
+  .prose img[alt*='Nathan Frank'] {
+    @apply border-accent-main h-48 w-48 rounded-full border-4 object-cover;
+    @apply float-right mb-4 ml-6 sm:h-64 sm:w-64;
   }
 }

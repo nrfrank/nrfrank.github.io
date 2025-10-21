@@ -20,7 +20,9 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
   {
     featuredProjects?.length > 0 && (
       <div class="mb-16 sm:mb-24">
-        <h2 class="mb-12 font-serif text-xl italic sm:mb-16 sm:text-2xl">Projects</h2>
+        <h2 class="text-accent-main mb-12 font-serif text-xl italic sm:mb-16 sm:text-2xl">
+          Projects
+        </h2>
         {featuredProjects.map((project) => (
           <ProjectPreview project={project} class="mb-10 sm:mb-12" headingLevel="h3" />
         ))}

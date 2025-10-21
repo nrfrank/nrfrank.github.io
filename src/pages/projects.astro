@@ -1,0 +1,95 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { sortItemsByDateDesc } from '../utils/data-utils';
+
+const projects = (await getCollection('projects')).sort(sortItemsByDateDesc);
+const featuredProjects = projects.filter((item) => item.data.isFeatured);
+const otherProjects = projects.filter((item) => !item.data.isFeatured);
+---
+
+<BaseLayout
+  title="Projects & Code"
+  description="Open source projects, tools, and code repositories by Nathan Frank covering machine learning, data science, sports analytics, and platform engineering."
+  image={{ src: '/nathan-preview.jpg', alt: 'Nathan Frank - ML Platform & Operations Leader' }}
+  showHeader={false}
+>
+  <article class="mb-16 sm:mb-24">
+    <div class="prose sm:prose-lg max-w-none">
+      <img src="/nathan-preview.jpg" alt="Nathan Frank" />
+
+      <h2>Projects & Code</h2>
+
+      <p>
+        I build and contribute to <em><strong>open source projects</strong></em> spanning <em
+          ><strong>machine learning platforms</strong></em
+        >, <em><strong>data science tools</strong></em>, and <em
+          ><strong>analytical applications</strong></em
+        >. My repositories reflect practical experience across the full ML lifecycle—from research
+        and experimentation to production systems.
+      </p>
+
+      <h3>Areas of Focus</h3>
+
+      <ul>
+        <li>
+          <em><strong>ML Platform Tools</strong></em>: Libraries and utilities for scalable machine
+          learning infrastructure
+        </li>
+        <li>
+          <em><strong>Data Science Applications</strong></em>: End-to-end analytical tools and
+          workflows
+        </li>
+        <li>
+          <em><strong>Scientific Computing</strong></em>: Computational tools for research and
+          analysis
+        </li>
+        <li>
+          <em><strong>Sports Analytics</strong></em>: Data visualization and statistical modeling
+          for sports performance
+        </li>
+      </ul>
+
+      {/* Featured Projects */}
+      {
+        featuredProjects.length > 0 && (
+          <>
+            <h3>Featured Projects</h3>
+            <div class="not-prose grid gap-6 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+              {featuredProjects.map((project) => (
+                <ProjectCard project={project} />
+              ))}
+            </div>
+          </>
+        )
+      }
+
+      {/* All Projects */}
+      {
+        otherProjects.length > 0 && (
+          <>
+            <h3>All Projects</h3>
+            <div class="not-prose grid gap-6 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+              {otherProjects.map((project) => (
+                <ProjectCard project={project} />
+              ))}
+            </div>
+          </>
+        )
+      }
+
+      {/* If no projects exist yet */}
+      {
+        projects.length === 0 && (
+          <>
+            <h3>Repository Portfolio</h3>
+            <p>
+              <em>Projects and code repositories will be listed here.</em>
+            </p>
+          </>
+        )
+      }
+    </div>
+  </article>
+</BaseLayout>

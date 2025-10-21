@@ -1,0 +1,45 @@
+---
+import { type CollectionEntry } from 'astro:content';
+import ArrowRight from '../icons/ArrowRight.astro';
+
+type Props = { media: CollectionEntry<'media'>; class?: string; headingLevel?: 'h2' | 'h3' };
+
+const { media, class: className, headingLevel = 'h2' } = Astro.props;
+const { title, description, venue, type } = media.data;
+const TitleTag = headingLevel;
+
+// Format the media type for display
+const typeLabels = {
+  talk: 'Talk',
+  podcast: 'Podcast',
+  interview: 'Interview',
+  workshop: 'Workshop',
+  panel: 'Panel',
+};
+---
+
+<a
+  class:list={['group flex items-start justify-between gap-8', className]}
+  href={media.data.url}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <div class="grow">
+    <TitleTag
+      class="font-serif text-xl leading-tight font-medium group-hover:underline group-hover:decoration-dashed group-hover:decoration-1 group-hover:underline-offset-4 sm:text-2xl"
+    >
+      {title}
+    </TitleTag>
+    <div class="mt-1 text-sm leading-normal text-neutral-600 dark:text-neutral-400">
+      <span class="font-medium">{typeLabels[type]}</span> at <span class="font-medium">{venue}</span
+      >
+    </div>
+    {description && <div class="mt-1 text-sm leading-normal">{description}</div>}
+  </div>
+  <div
+    class="hidden font-serif italic opacity-0 transition group-hover:opacity-100 sm:inline-flex sm:shrink-0 sm:items-center sm:gap-1"
+  >
+    View {typeLabels[type]}
+    <ArrowRight class="h-4 w-4 fill-current" />
+  </div>
+</a>

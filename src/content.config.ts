@@ -40,7 +40,34 @@ const projects = defineCollection({
     title: z.string(),
     description: z.string().optional(),
     publishDate: z.coerce.date(),
+    lastUpdated: z.coerce.date().optional(),
     isFeatured: z.boolean().default(false),
+
+    // GitHub Repository Information
+    repository: z.object({
+      url: z.string().url(),
+      name: z.string(),
+      isPrivate: z.boolean().default(false),
+    }),
+
+    // Technical Details
+    primaryLanguage: z.string().optional(),
+    technologies: z.array(z.string()).default([]),
+
+    // Project Metadata
+    status: z.enum(['active', 'maintenance', 'archived', 'prototype']).default('active'),
+    category: z.enum(['library', 'application', 'tool', 'experiment', 'research']).optional(),
+
+    // GitHub Stats (optional)
+    stats: z
+      .object({
+        stars: z.number().optional(),
+        forks: z.number().optional(),
+        openIssues: z.number().optional(),
+        license: z.string().optional(),
+      })
+      .optional(),
+
     seo: seoSchema.optional(),
   }),
 });

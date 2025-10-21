@@ -5,6 +5,7 @@ import Button from '../components/Button.astro';
 import Hero from '../components/Hero.astro';
 import PostPreview from '../components/PostPreview.astro';
 import ProjectPreview from '../components/ProjectPreview.astro';
+import MediaPreview from '../components/MediaPreview.astro';
 import siteConfig from '../data/site-config';
 import { sortItemsByDateDesc } from '../utils/data-utils';
 
@@ -13,6 +14,9 @@ const featuredPosts = posts.filter(({ data }) => data.isFeatured);
 
 const projects = (await getCollection('projects')).sort(sortItemsByDateDesc);
 const featuredProjects = projects.filter(({ data }) => data.isFeatured);
+
+const media = (await getCollection('media')).sort(sortItemsByDateDesc);
+const featuredMedia = media.filter(({ data }) => data.isFeatured);
 ---
 
 <BaseLayout description={siteConfig.description} image={siteConfig.image}>
@@ -28,6 +32,21 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
         ))}
         <div class="mt-12 sm:mt-16">
           <Button href="/projects">View All Projects</Button>
+        </div>
+      </div>
+    )
+  }
+  {
+    featuredMedia?.length > 0 && (
+      <div class="mb-16 sm:mb-24">
+        <h2 class="text-accent-main mb-12 font-serif text-xl italic sm:mb-16 sm:text-2xl">
+          Speaking & Media
+        </h2>
+        {featuredMedia.map((mediaItem) => (
+          <MediaPreview media={mediaItem} class="mb-10 sm:mb-12" headingLevel="h3" />
+        ))}
+        <div class="mt-12 sm:mt-16">
+          <Button href="/media">View All Media</Button>
         </div>
       </div>
     )

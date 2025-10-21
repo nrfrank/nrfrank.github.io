@@ -40,4 +40,4 @@ Today, at **_Grainger_**, I lead **_Machine Learning Platform & Operations_**, g
 
 I speak about **_enterprise MLOps_**, **_AI enablement_**, and the human side of shipping ML on podcasts, at internal/external events, and with local communities.
 
-See also: **[Media](/media)** · [Résumé](/resume.pdf) · [LinkedIn](https://www.linkedin.com/in/nrfrank)
+See also: **<a href="/media" target="_blank" rel="noopener noreferrer">Media</a>**

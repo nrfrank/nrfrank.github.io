@@ -75,10 +75,6 @@ const siteConfig: SiteConfig = {
       text: 'Contact',
       href: '/contact',
     },
-    {
-      text: 'Resume',
-      href: '/resume',
-    },
   ],
   socialLinks: [
     {
@@ -99,8 +95,8 @@ const siteConfig: SiteConfig = {
     },
     actions: [
       {
-        text: 'View Resume',
-        href: '/resume',
+        text: 'About Me',
+        href: '/about',
       },
       {
         text: 'Get in Touch',

@@ -41,3 +41,7 @@ Today, at **_Grainger_**, I lead **_Machine Learning Platform & Operations_**, g
 I speak about **_enterprise MLOps_**, **_AI enablement_**, and the human side of shipping ML on podcasts, at internal/external events, and with local communities.
 
 See also: **<a href="/media" target="_blank" rel="noopener noreferrer">Media</a>**
+
+### Advisory
+
+I serve as an advisor to **[Automated.co](https://www.automated.co/)**, an AI consultancy focused on taking organizations from strategy to working production solutions.

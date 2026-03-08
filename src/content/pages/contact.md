@@ -5,10 +5,8 @@ seo:
   description: Get in touch through email or social media! Let me know how I can help.
 ---
 
-Thank you for reaching out! Whether you have a question, a suggestion, or just want to share your thoughts, I'm all ears. Feel free to get in touch through any of the methods below:
+Happy to connect — whether you're interested in having me speak at your event, want to talk shop on ML platforms and enterprise AI, or just want to say hello.
 
-_Email:_
-Feel free to drop me an email at [nathanryanfrank@gmail.com](mailto:nathanryanfrank@gmail.com), and I'll do my best to respond as soon as possible.
+_Email:_ [nathanryanfrank@gmail.com](mailto:nathanryanfrank@gmail.com)
 
-_LinkedIn:_
-Connect with me on [LinkedIn](https://www.linkedin.com/in/nrfrank) as well.
+_LinkedIn:_ [linkedin.com/in/nrfrank](https://www.linkedin.com/in/nrfrank)

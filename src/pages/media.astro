@@ -2,31 +2,32 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import MediaCard from '../components/MediaCard.astro';
-import { sortItemsByDateDesc } from '../utils/data-utils';
 
-const media = (await getCollection('media')).sort(sortItemsByDateDesc);
-const featuredMedia = media.filter((item) => item.data.isFeatured);
-const otherMedia = media.filter((item) => !item.data.isFeatured);
+const media = (await getCollection('media')).sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
 ---
 
 <BaseLayout
   title="Media & Speaking"
   description="Speaking engagements, interviews, and media appearances by Nathan Frank on ML platforms, AI adoption, and enterprise technology leadership."
-  image={{ src: '/nathan-preview.jpg', alt: 'Nathan Frank - ML Platform & Operations Leader' }}
+  image={{ src: '/speaking-solo-gtg.jpg', alt: 'Nathan Frank speaking at GTG Tech Conference' }}
   showHeader={false}
 >
   <article class="mb-16 sm:mb-24">
     <div class="prose sm:prose-lg max-w-none">
-      <img src="/nathan-preview.jpg" alt="Nathan Frank" />
-
       <h2>Speaking & Media</h2>
 
       <p>
-        I regularly speak about <em><strong>ML platform engineering</strong></em>, <em
-          ><strong>enterprise AI adoption</strong></em
-        >, and <em><strong>technology leadership</strong></em> at conferences, podcasts, and industry
-        events.
+        I'm Nathan Frank — Director of ML Platform & Operations at Grainger, where I lead the
+        platform and teams helping data science, ML engineering, and analytics teams ship faster. My
+        background spans astrophysics, sports technology, and enterprise ML platforms, which means I
+        translate comfortably between researchers, engineers, and business stakeholders. I speak
+        about production ML systems, enterprise AI adoption, and the organizational realities of
+        scaling AI in large companies.
       </p>
+
+      <img src="/speaking-solo-gtg.jpg" alt="Nathan Frank speaking at GTG Tech Conference" />
 
       <h3>Topics I Cover</h3>
 
@@ -49,42 +50,16 @@ const otherMedia = media.filter((item) => !item.data.isFeatured);
         </li>
       </ul>
 
-      {/* Featured Media */}
+      {/* Talks & Appearances */}
       {
-        featuredMedia.length > 0 && (
+        media.length > 0 && (
           <>
-            <h3>Featured Appearances</h3>
-            <div class="not-prose grid gap-6 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
-              {featuredMedia.map((item) => (
-                <MediaCard media={item} />
+            <h3>Talks & Appearances</h3>
+            <div class="not-prose grid gap-6">
+              {media.map((item) => (
+                <MediaCard media={item} headingLevel="h4" />
               ))}
             </div>
-          </>
-        )
-      }
-
-      {/* All Media */}
-      {
-        otherMedia.length > 0 && (
-          <>
-            <h3>All Media</h3>
-            <div class="not-prose grid gap-6 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
-              {otherMedia.map((item) => (
-                <MediaCard media={item} />
-              ))}
-            </div>
-          </>
-        )
-      }
-
-      {/* If no media content exists yet */}
-      {
-        media.length === 0 && (
-          <>
-            <h3>Past Engagements</h3>
-            <p>
-              <em>Media appearances and speaking engagements will be listed here.</em>
-            </p>
           </>
         )
       }

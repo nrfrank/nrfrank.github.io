@@ -4,7 +4,6 @@ description: 'Demystifies MLOps by mapping it to proven DevOps and SRE practices
 date: 2023-09-13
 venue: 'GTG Tech Conference'
 type: 'talk'
-url: 'https://sessionize.com/nathan-frank/'
 topics: ['MLOps', 'Production ML', 'SRE/DevOps', 'Team Collaboration']
 audience: 'Leaders and practitioners building and operating ML systems in production, including data scientists, ML engineers, product managers, SRE and DevOps teams.'
 isFeatured: false

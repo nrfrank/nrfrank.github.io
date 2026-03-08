@@ -80,10 +80,12 @@ const media = defineCollection({
     date: z.coerce.date(),
     venue: z.string(), // Conference, podcast, etc.
     type: z.enum(['talk', 'podcast', 'interview', 'workshop', 'panel']),
-    url: z.string().url(),
+    url: z.string().url().optional(),
     topics: z.array(z.string()).default([]),
     audience: z.string().optional(),
     isFeatured: z.boolean().default(false),
+    image: z.string().optional(),
+    imageAlt: z.string().optional(),
     seo: seoSchema.optional(),
   }),
 });

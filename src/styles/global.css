@@ -115,7 +115,7 @@ html.dark {
   }
 
   /* Headshot styling - Custom: Hero styling floating right */
-  .prose img[alt*='Nathan Frank'] {
+  .prose img[alt='Nathan Frank'] {
     @apply border-accent-main h-48 w-48 rounded-full border-4 object-cover;
     @apply float-right mb-4 ml-6 sm:h-64 sm:w-64;
   }

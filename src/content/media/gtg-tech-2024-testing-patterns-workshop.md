@@ -4,7 +4,6 @@ description: 'A hands-on workshop for Python data and ML practitioners on bringi
 date: 2024-08-14
 venue: 'GTG Tech Conference'
 type: 'workshop'
-url: 'https://sessionize.com/nathan-frank/'
 topics:
   [
     'Testing Strategies',

@@ -4,7 +4,6 @@ description: 'Why centralized enterprise search matters and how to do it right. 
 date: 2025-08-19
 venue: 'GTG Tech Conference'
 type: 'talk'
-url: 'https://sessionize.com/nathan-frank/'
 topics: ['Enterprise Search', 'AI Assistants', 'RAG', 'Knowledge Management', 'Onyx', 'Open Source']
 audience: 'Team leads, product managers, and technical stakeholders (platform/IT, data/ML, security/architecture) who want faster, trusted answers across internal tools, docs, and conversations.'
 isFeatured: true

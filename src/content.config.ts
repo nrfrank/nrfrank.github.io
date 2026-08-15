@@ -86,6 +86,14 @@ const media = defineCollection({
     isFeatured: z.boolean().default(false),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
+    video: z
+      .object({
+        url: z.string(),
+        startTime: z.union([z.number(), z.string()]).optional(),
+        endTime: z.union([z.number(), z.string()]).optional(),
+        label: z.string().optional(),
+      })
+      .optional(),
     seo: seoSchema.optional(),
   }),
 });

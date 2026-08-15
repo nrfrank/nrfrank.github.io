@@ -2,9 +2,25 @@ import js from '@eslint/js';
 import tsParser from '@typescript-eslint/parser';
 import tsPlugin from '@typescript-eslint/eslint-plugin';
 import astroPlugin from 'eslint-plugin-astro';
+import globals from 'globals';
 
 export default [
+  // Global ignore patterns (must be standalone with only ignores to match globally)
+  {
+    ignores: ['dist/**', 'node_modules/**', '.astro/**', '.vite/**', 'public/**', '.claude/**'],
+  },
+
   js.configs.recommended,
+
+  // Global environment
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
+  },
 
   // TypeScript files
   {
@@ -14,6 +30,10 @@ export default [
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
+      },
+      globals: {
+        ...globals.browser,
+        ...globals.node,
       },
     },
     plugins: {
@@ -35,16 +55,15 @@ export default [
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
     },
     rules: {
       'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       'no-console': 'warn',
       'prefer-const': 'error',
     },
-  },
-
-  // Ignore patterns
-  {
-    ignores: ['dist/**', 'node_modules/**', '.astro/**', '.vite/**', 'public/**'],
   },
 ];

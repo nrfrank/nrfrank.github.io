@@ -13,7 +13,8 @@
     "lint:check": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "npm run format:check && npm run lint:check"
+    "check": "npm run format:check && npm run lint:check",
+    "test": "vitest run"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.2.3",
@@ -39,7 +40,8 @@
     "lint-staged": "^16.2.4",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.11"
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "vitest": "^4.1.10"
   },
   "lint-staged": {
     "*.{js,mjs,ts,tsx,astro}": [

@@ -4,7 +4,7 @@ description: 'A panel discussion with Chicago tech leaders on driving AI innovat
 date: 2026-03-05
 venue: 'Tech in Motion Chicago'
 type: 'panel'
-url: 'https://www.meetup.com/techinmotionchicago/events/313294477/'
+url: 'https://techinmotion.com/blog/bringing-legacy-tech-systems-into-the-age-of-ai'
 topics: ['Applied AI', 'Legacy Modernization', 'Enterprise AI', 'AI at Scale', 'Responsible AI']
 audience: 'Engineering leaders, architects, and technologists working in established enterprises looking to adopt and scale AI.'
 isFeatured: true

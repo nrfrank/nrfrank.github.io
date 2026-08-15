@@ -7,6 +7,11 @@ type: 'panel'
 url: 'https://techinmotion.com/blog/bringing-legacy-tech-systems-into-the-age-of-ai'
 topics: ['Applied AI', 'Legacy Modernization', 'Enterprise AI', 'AI at Scale', 'Responsible AI']
 audience: 'Engineering leaders, architects, and technologists working in established enterprises looking to adopt and scale AI.'
+video:
+  url: 'https://www.youtube.com/watch?v=lu7QgmhOqq8'
+  startTime: '36:29'
+  endTime: '37:40'
+  label: 'Watch Panel Clip'
 isFeatured: true
 seo:
   title: 'Nathan Frank - Modernizing Legacy Systems with Applied AI Panel'

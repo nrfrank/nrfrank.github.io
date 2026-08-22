@@ -25,7 +25,7 @@
     "@fontsource-variable/newsreader": "^5.2.6",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^5.18.1",
-    "marked": "^15.0.7",
+    "marked": "^18.0.10",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {

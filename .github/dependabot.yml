@@ -1,13 +1,47 @@
 version: 2
 updates:
+  # 1. NPM Dependencies
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
       interval: 'weekly'
-    open-pull-requests-limit: 10
+      day: 'sunday'
+    open-pull-requests-limit: 5
+
+    # Group updates to reduce PR clutter into clean weekly bundles
+    groups:
+      dev-dependencies:
+        dependency-type: 'development'
+        update-types:
+          - 'minor'
+          - 'patch'
+      dependencies:
+        dependency-type: 'production'
+        update-types:
+          - 'minor'
+          - 'patch'
+
+    # Ignore breaking major version upgrades that break plugin ecosystems
     ignore:
-      # Ignore breaking major version upgrades for Astro until ready for major migration
+      # Frameworks requiring planned migrations
       - dependency-name: 'astro'
         update-types: ['version-update:semver-major']
-      - dependency-name: '@astrojs/mdx'
+      - dependency-name: '@astrojs/*'
         update-types: ['version-update:semver-major']
+      # Linters/Tooling whose plugins break on major bumps
+      - dependency-name: 'eslint'
+        update-types: ['version-update:semver-major']
+      - dependency-name: '@eslint/*'
+        update-types: ['version-update:semver-major']
+      - dependency-name: '@typescript-eslint/*'
+        update-types: ['version-update:semver-major']
+
+  # 2. GitHub Actions CI Workflows
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'monthly'
+    groups:
+      actions:
+        patterns:
+          - '*'

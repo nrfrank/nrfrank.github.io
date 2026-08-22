@@ -123,7 +123,7 @@ All site settings are centralized in `/src/data/site-config.ts`:
 Automated deployment via GitHub Actions to GitHub Pages:
 
 - Triggers on pushes to `main` branch
-- Builds with Node.js 20 and deploys to `dist/`
+- Builds with Node.js 22 and deploys to `dist/`
 - Uses Astro's static file generation (`build: { format: 'file' }`)
 - Requires Pages to be enabled in repository settings
 

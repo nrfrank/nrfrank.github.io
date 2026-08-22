@@ -26,8 +26,9 @@ const playerId = `media-player-${media.id.replace(/[^a-zA-Z0-9_-]/g, '-')}`;
 ---
 
 <div
+  id={media.id}
   class:list={[
-    'media-card-interactive border-main border-l-accent-main bg-background block rounded-lg border border-l-4 p-6 transition-colors duration-200',
+    'media-card-interactive border-main border-l-accent-main bg-background target:ring-accent-main/40 dark:target:ring-accent-main/50 block scroll-mt-24 rounded-lg border border-l-4 p-6 transition-all duration-200 target:ring-2',
     className,
   ]}
 >
